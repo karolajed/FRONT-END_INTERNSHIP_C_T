@@ -1,0 +1,14 @@
+body {
+  font-family: 'Raleway', Sans-sherif; }
+  body h1 {
+    font-weight: 600; }
+  body table tbody tr td img {
+    width: 100px;
+    height: 100px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out; }
+  body table tbody tr td img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+
+/*# sourceMappingURL=style.css.map */
