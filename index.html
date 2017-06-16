@@ -22,13 +22,13 @@
         <div class="panel-heading">
           <div class="row">
             <div class="col col-xs-6">
-              <h3 class="panel-title">Pokemons available in the game:</h3>
+              <h1 class="panel-title">Pokemons available in the game:</h1>
             </div>
           </div>
         </div>
         <div class="panel-body">
           <div class="table-responsive row col-md-12">
-            <table class="table table-bordered table-hover table-responsive" id="tabla">
+            <table class="table table-bordered table-hover table-responsive">
               <thead>
                 <tr id="info">
                   <th class="pok-img">ID</th>
@@ -43,77 +43,77 @@
                   <td>1</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="bulbasaur"></td>
                   <td>bulbasaur</td>
-                  <td>coś</td>
+                  <td class="hp">45</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page2">
                   <td>2</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/ivysaur.jpg" alt="ivysaur"></td>
                   <td>ivysaur</td>
-                  <td>coś</td>
+                  <td class="hp">60</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page3">
                   <td>3</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/venusaur.jpg" alt="venusaur"></td>
                   <td>venusaur</td>
-                  <td>coś</td>
+                  <td class="hp">80</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page4">
                   <td>4</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/charmander.jpg" alt="charmander"></td>
                   <td>charmander</td>
-                  <td>coś</td>
+                  <td class="hp">39</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page5">
                   <td>5</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/charmeleon.jpg" alt="charmeleon"></td>
                   <td>charmeleon</td>
-                  <td>coś</td>
+                  <td class="hp">58</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page6">
                   <td>6</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/charizard.jpg" alt="charizard"></td>
                   <td>charizard</td>
-                  <td>coś</td>
+                  <td class="hp">78</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page7">
                   <td>7</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/squirtle.jpg" alt="squirtle"></td>
                   <td>squirtle</td>
-                  <td>coś</td>
+                  <td class="hp">44</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page8">
                   <td>8</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/wartortle.jpg" alt="wartortle"></td>
                   <td>wartortle</td>
-                  <td>coś</td>
+                  <td class="hp">58</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page9">
                   <td>9</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="blastoise"></td>
                   <td>blastoise</td>
-                  <td>coś</td>
+                  <td class="hp">79</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page10">
                   <td>10</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/caterpie.jpg  " alt="caterpie"></td>
                   <td>caterpie</td>
-                  <td>coś</td>
+                  <td class="hp">45</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
                 <tr id="page11">
                   <td>11</td>
                   <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/metapod.jpg" alt="metapod"></td>
                   <td>metapod</td>
-                  <td>coś</td>
+                  <td class="hp">50</td>
                   <td><button type="button" class="btn btn-info">More</button></td>
                 </tr>
               </tbody>
@@ -122,8 +122,6 @@
         </div>
         <div class="panel-footer">
           <div class="row">
-            <!--<div class="col col-xs-4">Page 1 of 2
-</div>-->
             <div class="col col-xs-12">
               <ul class="pagination hidden-xs pull-right" id="myPager">
                 <li><a href="#page1">1</a></li>
@@ -138,20 +136,11 @@
                 <li><a href="#page10">10</a></li>
                 <li><a href="#page11">11</a></li>
               </ul>
-              <nav>
-                <ul class="pagination"></ul>
-              </nav>
-            </div> 
-            <div>
-              <nav>
-                <ul class="pagination"></ul>
-              </nav>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
