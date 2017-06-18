@@ -1,8 +1,3 @@
-/*global $, jQuery, alert*/
-/*jslint vars: true, plusplus: true, devel: true, nomen: true, indent: 4, maxerr: 50 */
-/*global define */
-
-
 (function () {
   var btn = window.location.href;
   var btnNumber;
