@@ -4,7 +4,9 @@ body {
   body #logo {
     height: 200px; }
   body h1 {
-    font-weight: 600; }
+    font-weight: 400; }
+  body table thead th {
+    text-transform: uppercase; }
   body table tbody tr td {
     text-align: center; }
     body table tbody tr td .pok-img {
@@ -17,5 +19,7 @@ body {
     body table tbody tr td img:hover {
       -webkit-transform: rotate(360deg);
       transform: rotate(360deg); }
+  body #name {
+    font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -10,17 +10,24 @@ body {
   }
 
   h1 {
-    font-weight: 600;
+    font: {
+      weight: 400;
+    }
   }
 
   table {
+    thead {
+      th {
+        text-transform: uppercase;
+      }
+    }
     tbody {
       tr {
         td {
           text-align: center;
           .pok-img {
             width: 120px;
-          };
+          }
           img {
             width: 100px;
             height: 100px;
@@ -34,5 +41,9 @@ body {
         }
       }
     }
+  }
+  
+  #name {
+    font-size: 20px;
   }
 }
