@@ -5,8 +5,11 @@
     if (btn.charAt(btn.length - 1) == 1) {
       btnNumber = "11";
     }
-    else {
+    else if(btn.charAt(btn.length - 1) == 0) {
       btnNumber = "10";
+    }
+    else {
+      btnNumber = "12";
     }
   }
   else {
