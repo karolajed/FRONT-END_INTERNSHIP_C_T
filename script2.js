@@ -1,16 +1,7 @@
 (function () {
   var btn = window.location.href;
-  var btnNumber;
-  if ((btn.charAt(btn.length - 3) != "n") && (btn.charAt(btn.length - 3) != "t")) {
-    btnNumber = btn.charAt(btn.length - 3) + btn.charAt(btn.length - 2) + btn.charAt(btn.length - 1);
-  }
-  else if(btn.charAt(btn.length - 2) != "n") {
-    btnNumber = btn.charAt(btn.length - 2) + btn.charAt(btn.length - 1);
-  }
-  else {
-    btnNumber = btn.charAt(btn.length - 1);
-  }
-
+  var btnStr = btn.replace(/.*index2.html#btn/, "");
+  var btnNumber = btnStr.toString();
   var xhr = new XMLHttpRequest();
   var img = new Image();
   function pokemonArrivedEventListener(e) {
@@ -33,7 +24,7 @@
       var hpStatObject = pokemon.stats.find(x => x.stat.name === "hp");
       var hp = hpStatObject.base_stat; 
       document.getElementById("hp").innerHTML = hp;
-      
+
       img.src = "https://img.pokemondb.net/artwork/" + pokemon.forms[0].name + ".jpg";
       img.alt = pokemon.forms[0].name;
       document.getElementById("poke-image").appendChild(img);

@@ -1,5 +1,4 @@
 /*jslint browser: true*/
-/*global $, jQuery, alert*/
 
 var pageNumber = 1;
 function loadPokemons() {
