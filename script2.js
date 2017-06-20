@@ -30,6 +30,10 @@
       var defense = defenseStatObject.base_stat; 
       document.getElementById("defense").innerHTML = defense;
 
+      var hpStatObject = pokemon.stats.find(x => x.stat.name === "hp");
+      var hp = hpStatObject.base_stat; 
+      document.getElementById("hp").innerHTML = hp;
+      
       img.src = "https://img.pokemondb.net/artwork/" + pokemon.forms[0].name + ".jpg";
       img.alt = pokemon.forms[0].name;
       document.getElementById("poke-image").appendChild(img);
