@@ -25,7 +25,6 @@ function loadPokemons() {
           var cell1 = row.insertCell(1);
           var cell2 = row.insertCell(2);
           var cell3 = row.insertCell(3);
-          var cell4 = row.insertCell(4);
 
           cell0.innerHTML = i;
 
@@ -35,7 +34,6 @@ function loadPokemons() {
           cell1.appendChild(img[i]);
 
           cell2.innerHTML = pokemon.name;
-          cell3.innerHTML = "hp " + i;
 
           var alink = document.createElement("A");
           var text = document.createTextNode("More");
@@ -45,7 +43,7 @@ function loadPokemons() {
           alink.setAttribute('target', "_blank");
           alink.setAttribute('class', "btn btn-info");
           alink.appendChild(text);
-          cell4.appendChild(alink);
+          cell3.appendChild(alink);
 
           i++;
         })
