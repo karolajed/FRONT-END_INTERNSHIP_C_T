@@ -1,14 +1,19 @@
 (function () {
   var btn = window.location.href;
   var btnNumber;
-  if ((btn.charAt(btn.length - 3) != "n") && (btn.charAt(btn.length - 3) != "t")) {
-    btnNumber = btn.charAt(btn.length - 3) + btn.charAt(btn.length - 2) + btn.charAt(btn.length - 1);
-  }
-  else if(btn.charAt(btn.length - 2) != "n") {
-    btnNumber = btn.charAt(btn.length - 2) + btn.charAt(btn.length - 1);
+  if (btn.charAt(btn.length - 2) == 1) {
+    if (btn.charAt(btn.length - 1) == 1) {
+      btnNumber = "11";
+    }
+    else if(btn.charAt(btn.length - 1) == 0) {
+      btnNumber = "10";
+    }
+    else {
+      btnNumber = "12";
+    }
   }
   else {
-    btnNumber = btn.charAt(btn.length - 1);
+    var btnNumber = btn.charAt(btn.length-1);
   }
 
   var xhr = new XMLHttpRequest();
@@ -41,7 +46,7 @@
   xhr.open("GET", url, true);
   xhr.send(null);
 
-  /*
+/*
   var xhr2 = new XMLHttpRequest();
   function pokemonArrivedEventListener2(e) {
     if (xhr.readyState == 4 && xhr.status == 200) {

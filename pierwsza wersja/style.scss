@@ -1,0 +1,49 @@
+body {
+  
+  text-align: center;
+  font : {
+    family: 'Raleway', Sans-sherif;
+  }
+  
+  #logo {
+    height: 200px;
+  }
+
+  h1 {
+    font: {
+      weight: 400;
+    }
+  }
+
+  table {
+    thead {
+      th {
+        text-transform: uppercase;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          text-align: center;
+          .pok-img {
+            width: 120px;
+          }
+          img {
+            width: 100px;
+            height: 100px;
+            -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition: transform .8s ease-in-out;
+          }
+          img:hover {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+  
+  #name {
+    font-size: 20px;
+  }
+}

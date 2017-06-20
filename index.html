@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
   </head>
 
   <body>
@@ -27,7 +26,7 @@
         </div>
         <div class="panel-body">
           <div class="table-responsive row col-md-12">
-            <table class="table table-bordered table-hover table-responsive">
+            <table class="table table-bordered table-hover table-responsive" id="etable">
               <thead>
                 <tr>
                   <th>ID</th>
@@ -46,91 +45,14 @@
                   <th>more information</th>
                 </tr>
               </tfoot>
-              <tbody id="TablaFamilias">
-                <tr id="page1">
-                  <td>1</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="bulbasaur"></td>
-                  <td>bulbasaur</td>
-                  <td class="hp">45</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info1" href="index2.html#btn1" target="_blank">More</a></td>
-                </tr>
-                <tr id="page2">
-                  <td>2</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/ivysaur.jpg" alt="ivysaur"></td>
-                  <td>ivysaur</td>
-                  <td class="hp">60</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info2" href="index2.html#btn2" target="_blank">More</a></td>
-                </tr>
-                <tr id="page3">
-                  <td>3</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/venusaur.jpg" alt="venusaur"></td>
-                  <td>venusaur</td>
-                  <td class="hp">80</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info3" href="index2.html#btn3" target="_blank">More</a></td>
-                </tr>
-                <tr id="page4">
-                  <td>4</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/charmander.jpg" alt="charmander"></td>
-                  <td>charmander</td>
-                  <td class="hp">39</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info4" href="index2.html#btn4" target="_blank">More</a></td>
-                </tr>
-                <tr id="page5">
-                  <td>5</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/charmeleon.jpg" alt="charmeleon"></td>
-                  <td>charmeleon</td>
-                  <td class="hp">58</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info5" href="index2.html#btn5" target="_blank">More</a></td>
-                </tr>
-                <tr id="page6">
-                  <td>6</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/charizard.jpg" alt="charizard"></td>
-                  <td>charizard</td>
-                  <td class="hp">78</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info6" href="index2.html#btn6"  target="_blank">More</a></td>
-                </tr>
-                <tr id="page7">
-                  <td>7</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/squirtle.jpg" alt="squirtle"></td>
-                  <td>squirtle</td>
-                  <td class="hp">44</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info7" href="index2.html#btn7"  target="_blank">More</a></td>
-                </tr>
-                <tr id="page8">
-                  <td>8</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/wartortle.jpg" alt="wartortle"></td>
-                  <td>wartortle</td>
-                  <td class="hp">58</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info8" href="index2.html#btn8"  target="_blank">More</a></td>
-                </tr>
-                <tr id="page9">
-                  <td>9</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/blastoise.jpg" alt="blastoise"></td>
-                  <td>blastoise</td>
-                  <td class="hp">79</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info9" href="index2.html#btn9"  target="_blank">More</a></td>
-                </tr>
-                <tr id="page10">
-                  <td>10</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/caterpie.jpg" alt="caterpie"></td>
-                  <td>caterpie</td>
-                  <td class="hp">45</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info10" href="index2.html#btn10"  target="_blank">More</a></td>
-                </tr>
-                <tr id="page11">
-                  <td>11</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/metapod.jpg" alt="metapod"></td>
-                  <td>metapod</td>
-                  <td class="hp">50</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info11" href="index2.html#btn11"  target="_blank">More</a></td>
-                </tr>
-                <tr id="page12">
-                  <td>12</td>
-                  <td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/butterfree.jpg" alt="butterfree"></td>
-                  <td>butterfree</td>
-                  <td class="hp">60</td>
-                  <td><a type="button" class="btn btn-info" id="btn-info11" href="index2.html#btn12"  target="_blank">More</a></td>
-                </tr>
+              <tbody id="intable">
+                <!--<tr id="page1">
+<td>1</td>
+<td class="pok-img"><img class="img-responsive" src="https://img.pokemondb.net/artwork/bulbasaur.jpg" alt="bulbasaur"></td>
+<td>bulbasaur</td>
+<td class="hp">45</td>
+<td><a type="button" class="btn btn-info" id="btn-info1" href="index2.html#btn1" target="_blank">More</a></td>
+</tr> -->
               </tbody>
             </table>
           </div>
@@ -138,20 +60,22 @@
         <div class="panel-footer">
           <div class="row">
             <div class="col col-xs-12">
-              <ul class="pagination hidden-xs pull-right" id="myPager">
-                <li><a href="#page1">1</a></li>
-                <li><a href="#page2">2</a></li>
-                <li><a href="#page3">3</a></li>
-                <li><a href="#page4">4</a></li>
-                <li><a href="#page5">5</a></li>
-                <li><a href="#page6">6</a></li>
-                <li><a href="#page7">7</a></li>
-                <li><a href="#page8">8</a></li>
-                <li><a href="#page9">9</a></li>
-                <li><a href="#page10">10</a></li>
-                <li><a href="#page11">11</a></li>
-                <li><a href="#page12">12</a></li>
-              </ul>
+              <a type="button" class="btn btn-info" onclick="loadPokemons()">Load more</a>
+              <!--<ul class="pagination hidden-xs pull-right" id="myPager">
+
+<li><a href="index.html#page1">1</a></li>
+<li><a href="index.html#page2" onclick="loadPokemons()">2</a></li>
+<li><a href="index.html#page3">3</a></li>
+<li><a href="index.html#page4">4</a></li>
+<li><a href="index.html#page5">5</a></li>
+<li><a href="index.html#page6">6</a></li>
+<li><a href="index.html#page7">7</a></li>
+<li><a href="index.html#page8">8</a></li>
+<li><a href="index.html#page9">9</a></li>
+<li><a href="index.html#page10">10</a></li>
+<li><a href="index.html#page11">11</a></li>
+<li><a href="index.html#page12">12</a></li>
+</ul>-->
             </div>
           </div>
         </div>
